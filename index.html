@@ -104,6 +104,17 @@
 
   /* DIVIDER */
   .divider{border:none;border-top:1px solid #1A1A1A;margin:0;}
+
+  /* DIGITAL PRODUCTS */
+  .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;}
+  .product-card{background:var(--dark2);border:1px solid #222;border-radius:16px;overflow:hidden;transition:border-color 0.2s;display:flex;flex-direction:column;}
+  .product-card:hover{border-color:var(--gold);}
+  .product-price-tag{display:inline-block;background:var(--gold);color:#0D0D0D;font-size:0.85rem;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:10px;}
+  .product-title{font-size:1rem;font-weight:700;margin-bottom:6px;color:var(--white);}
+  .product-desc{font-size:0.85rem;color:var(--muted);line-height:1.6;flex:1;}
+  .product-body{padding:1.2rem;}
+  .product-btn{display:block;text-align:center;background:var(--purple);color:var(--white);padding:0.7rem;font-size:0.9rem;font-weight:600;transition:opacity 0.2s;margin-top:1rem;border-radius:0 0 14px 14px;}
+  .product-btn:hover{opacity:0.85;}
 </style>
 </head>
 <body>
@@ -112,6 +123,7 @@
 <nav>
   <div class="logo">Learn 2 Much</div>
   <div class="nav-links">
+    <a href="#products">Products</a>
     <a href="#workshop">Workshop</a>
     <a href="#coaching">Coaching</a>
     <a href="#ebook">Ebook</a>
@@ -139,6 +151,81 @@
   <div class="stat"><div class="stat-num">3M</div><div class="stat-label">Profile Views</div></div>
   <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Real Strategies</div></div>
 </div>
+
+<hr class="divider"/>
+
+<!-- DIGITAL PRODUCTS -->
+<section id="products">
+  <div class="section-label">Digital Products</div>
+  <h2 class="section-title">Tools Built for Creators</h2>
+  <p class="section-sub">Everything I know broken down into guides, templates, and workbooks you can use today. Prices start at $9.</p>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-price-tag">$9</div>
+        <div class="product-title">20 Hook Formulas That Stop the Scroll</div>
+        <div class="product-desc">Copy, paste, and post. 20 proven hooks that drive views on Instagram and TikTok — ready to use right now.</div>
+      </div>
+      <a href="https://stan.store/mrplay2much" class="product-btn" target="_blank">Get the Cheat Sheet</a>
+    </div>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-price-tag">$12</div>
+        <div class="product-title">30-Day Content Calendar</div>
+        <div class="product-desc">Your entire month of content planned out — what to post, when to post it, and what format to use every single day.</div>
+      </div>
+      <a href="https://stan.store/mrplay2much" class="product-btn" target="_blank">Get the Calendar</a>
+    </div>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-price-tag">$17</div>
+        <div class="product-title">Brand Deal Pitch Templates</div>
+        <div class="product-desc">The exact DMs and emails I use to land brand deals. Copy, customize, and send. Rate card guide included.</div>
+      </div>
+      <a href="https://stan.store/mrplay2much" class="product-btn" target="_blank">Get the Templates</a>
+    </div>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-price-tag">$9</div>
+        <div class="product-title">The Algorithm Cheat Sheet</div>
+        <div class="product-desc">What Instagram and TikTok actually score on every video — straight facts, no guessing, just strategy.</div>
+      </div>
+      <a href="https://stan.store/mrplay2much" class="product-btn" target="_blank">Get the Cheat Sheet</a>
+    </div>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-price-tag">$17</div>
+        <div class="product-title">10 Viral Reel Concepts</div>
+        <div class="product-desc">10 ready-to-record reel ideas each with a hook, script outline, and caption formula. Pick one and post it today.</div>
+      </div>
+      <a href="https://stan.store/mrplay2much" class="product-btn" target="_blank">Get the Bundle</a>
+    </div>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-price-tag">$12</div>
+        <div class="product-title">Content Audit Workbook</div>
+        <div class="product-desc">Analyze your own page, find what's hurting your reach, and walk away with a clear fix-it plan in one hour.</div>
+      </div>
+      <a href="https://stan.store/mrplay2much" class="product-btn" target="_blank">Get the Workbook</a>
+    </div>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-price-tag">$12</div>
+        <div class="product-title">The Niche Finder Guide</div>
+        <div class="product-desc">Stop posting everything. Find the one thing that makes people follow you and let the algorithm do the rest.</div>
+      </div>
+      <a href="https://stan.store/mrplay2much" class="product-btn" target="_blank">Get the Guide</a>
+    </div>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-price-tag">$27</div>
+        <div class="product-title">How to Create a Character That Goes Viral</div>
+        <div class="product-desc">The Lil JJ blueprint. Build a character that hits emotions, makes people laugh, and spreads on its own.</div>
+      </div>
+      <a href="https://stan.store/mrplay2much" class="product-btn" target="_blank">Get the Blueprint</a>
+    </div>
+  </div>
+</section>
 
 <hr class="divider"/>
 
